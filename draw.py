@@ -46,7 +46,9 @@ for i, val in enumerate(x):
 s_hat = list(set(nodes) - set(s))
 
 print('s:', len(s))
+print(' '.join(map(str, s)))
 print('s_hat:', len(s_hat))
+print(' '.join(map(str, s_hat)))
 
 s_x = []
 s_y = []
@@ -69,3 +71,4 @@ for i, j in edges.keys():
     ax.plot([x[int(i) - 1], x[int(j) - 1]], [y[int(i) - 1], y[int(j) - 1]],
             color='#66ccff')
 plt.show()
+# fig.savefig('figure.png')
